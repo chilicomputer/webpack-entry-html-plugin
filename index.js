@@ -21,7 +21,7 @@ Plugin.prototype.apply = function( compiler ) {
   var tpl = this.tpl
 
   if ( !tpl ) {
-    throw new TypeError( 'ReactEntryHtmlPlugin need tpl\'s path <String>' )
+    throw new TypeError( 'webpack-entry-html-plugin need tpl\'s path <String>' )
   }
 
   compiler.plugin( 'after-emit', function( compilation, callback ) {
@@ -70,7 +70,7 @@ Plugin.prototype.apply = function( compiler ) {
     }
 
     if ( !fileSystem.mkdirp ) {
-      return callback( new Error( 'ReactEntryHtmlPlugin error: file system mkdirp error' ) )
+      return callback( new Error( 'webpack-entry-html-plugin error: file system mkdirp error' ) )
     }
 
     fileSystem.mkdirp( path.dirname( dist ), function( err ) {
