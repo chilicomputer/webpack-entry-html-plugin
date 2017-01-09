@@ -1,0 +1,30 @@
+{
+  "name": "webpack-entry-html-plugin",
+  "version": "1.0.0",
+  "description": "yet another plugin to wrap entry chunk in html file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chilicomputer/webpack-entry-html-plugin.git"
+  },
+  "keywords": [
+    "webpack-html-plugin",
+    "webpack"
+  ],
+  "author": "chillicomputer@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chilicomputer/webpack-entry-html-plugin/issues"
+  },
+  "homepage": "https://github.com/chilicomputer/webpack-entry-html-plugin#readme",
+  "peerDependencies": {
+    "webpack": "^2.1.0-beta.26 || ^2.2.0-rc.0"
+  },
+  "dependencies": {
+    "concat-stream": "^1.6.0",
+    "trumpet": "^1.7.2"
+  }
+}
