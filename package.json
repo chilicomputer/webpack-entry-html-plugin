@@ -1,6 +1,6 @@
 {
   "name": "webpack-entry-html-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "yet another plugin to wrap entry chunk in html file",
   "main": "index.js",
   "scripts": {
@@ -26,5 +26,9 @@
   "dependencies": {
     "concat-stream": "^1.6.0",
     "trumpet": "^1.7.2"
-  }
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ]
 }

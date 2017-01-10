@@ -3,7 +3,7 @@ var path = require( 'path' )
 var trumpet = require( 'trumpet' )
 var concat = require( 'concat-stream' )
 
-function Plugin( tpl, options ) {
+function EntryHtmlPlugin( tpl, options ) {
   if ( typeof tpl !== 'string' ) {
     options = tpl
     tpl = undefined
@@ -11,8 +11,8 @@ function Plugin( tpl, options ) {
   this.options = options || {}
   this.tpl = tpl || this.options.tpl
 }
-module.exports = Plugin
-Plugin.prototype.apply = function( compiler ) {
+module.exports = EntryHtmlPlugin
+EntryHtmlPlugin.prototype.apply = function( compiler ) {
 
   var options = this.options
   var context = compiler.options.context
